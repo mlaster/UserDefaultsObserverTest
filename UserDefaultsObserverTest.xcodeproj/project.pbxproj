@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1944FADF2182CC9100F87F24 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1944FADE2182CC9100F87F24 /* main.swift */; };
+		1944FAE82182CE0300F87F24 /* UserDefaultsObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1944FAE72182CE0300F87F24 /* UserDefaultsObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		1944FADB2182CC9100F87F24 /* UserDefaultsObserverTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UserDefaultsObserverTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1944FADE2182CC9100F87F24 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1944FAE62182CD5200F87F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1944FAE72182CE0300F87F24 /* UserDefaultsObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		1944FADD2182CC9100F87F24 /* UserDefaultsObserverTest */ = {
 			isa = PBXGroup;
 			children = (
+				1944FAE62182CD5200F87F24 /* Info.plist */,
 				1944FADE2182CC9100F87F24 /* main.swift */,
+				1944FAE72182CE0300F87F24 /* UserDefaultsObserver.swift */,
 			);
 			path = UserDefaultsObserverTest;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1944FAE82182CE0300F87F24 /* UserDefaultsObserver.swift in Sources */,
 				1944FADF2182CC9100F87F24 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +250,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				INFOPLIST_FILE = UserDefaultsObserverTest/Info.plist;
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				INFOPLIST_PREPROCESS = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.UserDefaultsObserverTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -253,6 +264,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				INFOPLIST_FILE = UserDefaultsObserverTest/Info.plist;
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				INFOPLIST_PREPROCESS = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.UserDefaultsObserverTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
